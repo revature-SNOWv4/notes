@@ -1,3 +1,4 @@
+var c;
 /* 
     What is JavaScript?
         Its a scripting language originally designed to make our pages dynamic.
@@ -11,7 +12,12 @@
     JavaScript has become so popular that there was demand to use javascript outside of the browser. 
     Eventually someone created a runtime environement called NodeJS.
 */
-
+console.log(c); 
+// undefined
+c=2;
+console.log(c);
+// 2
+pythagoreanTheorem(1,2);
 //how do you print to the console in JS?
 console.log("Hi JS!"); // this line is equivalent to System.out.println(); in Java
 console.log('hi js!!');
@@ -131,3 +137,80 @@ ES6:
 let - all four types of scope
 const - variable that can never be changed
 */
+
+var arr = [5,4,9,0];
+console.log(arr);
+
+let sorted = arr.sort(function(a,b){
+    if(a<b){
+        return 1;
+    }
+    else{
+        return -1;
+    }
+});
+console.log(arr);
+
+//this is a callback function
+var functionVar = function(val){return val*2};
+functionVar();
+function returnResult(func, val){
+    return func(val);
+}
+returnResult(functionVar);
+
+var arr2 = [9, 7, 4, 3 , 19, 35];
+/*
+let doubled = arr2.map(function(element){
+    return element*2;
+});
+console.log(doubled);*/
+
+let filtered = arr2.filter(function(element){
+    return ((element % 3) == 0);
+});
+
+console.log(filtered);
+
+let reversed  = arr2.reverse();
+console.log(reversed);
+
+var arr3 = ["cat", [0, 1, 2], function(a){return a*a}];
+console.log(arr3[2](3));
+console.log(arr3[1][2]);
+
+class animal {
+    constructor(legs){
+        this.legs = legs;
+    }
+    noise(){
+        console.log("gurgle");
+    }
+    get legs(){
+        return this.legs;
+    }
+    set legs(numLegs){
+        this.legs = numLegs;
+    }
+}
+
+var cat = new animal(4);
+cat.noise();
+console.log(cat.legs);
+
+var dog = new dog(4);
+dog.noise();
+
+var myString = "bacon";
+console.log(myString.charAt(0));
+console.log(myString.toUpperCase());
+console.log(myString.substring(-3, -1));
+index1 = -2
+try{
+    if(index1 < 0){
+        throw new Error("impossible substring");
+    }
+    console.log(myString.substring(index1));
+}catch(error){
+    console.log(error);
+}
