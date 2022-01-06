@@ -194,8 +194,21 @@ class animal {
     }
 }
 
+var t = 2;
+function change(u){
+    u = 0;
+}
+change(t);
+console.log(t);
+
 var cat = new animal(4);
 cat.noise();
+console.log(cat.legs);
+
+function amputate(animal){
+    animal.legs = 3;
+}
+amputate(cat);
 console.log(cat.legs);
 
 var dog = new dog(4);
@@ -214,3 +227,7 @@ try{
 }catch(error){
     console.log(error);
 }
+// loosely typed of 
+"use strict"
+var z = "a message";
+var z = 4;

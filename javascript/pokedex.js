@@ -39,8 +39,41 @@ function getData (){
        dataSection.innerHTML = '';
         if(xhttp.readyState === 4){
             if(xhttp.status === 200){
-                dataSection.innerHTML = xhttp.responseText;
+                var response = xhttp.responseText;
+                response = JSON.parse(response);
+                populateData(response);
             }
         }
     }
+}
+function populateData(response){
+    var dataSection = document.getElementById('data');
+    var nameTag = document.createElement('h3');
+    nameTag.innerHTML = response.name;
+
+    dataSection.appendChild(nameTag);
+    console.log(nameTag);
+
+    var abilitiesArray = response.abilities;
+    var abilities = document.createElement('ul');
+
+    // var ability is an object ability grabbed from json
+    for(var ability of abilitiesArray){
+        var abilityLi = document.createElement('li');
+        abilityLi.innerHTML = ability.ability.name;
+        abilities.appendChild(abilityLi);
+    }
+    dataSection.innerHTML += 'Abilities<br>';
+    dataSection.appendChild(abilities);
+    var spritesObject = response.sprites;
+    
+    // var sprite is an index
+    for(var sprite in spritesObject){
+        if(spritesObject[sprite]){
+            var spriteImg = document.createElement('img');
+            spriteImg.src = spritesObject[sprite];
+            dataSection.appendChild(spriteImg);
+        }
+    }
+
 }
