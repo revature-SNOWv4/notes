@@ -1,0 +1,8 @@
+<h2>Structural directives</h2>
+<h3 *ngIf="isVisible">Am I visible?</h3>
+<button (click)="toggle()">toggle!</button>
+<div *ngIf = "isVisible"><app-two></app-two></div>
+
+<div [innerHTML]="propertyBindingVariable"></div>
+<input [(ngModel)]="inputData">
+<div>{{inputData}}</div>
