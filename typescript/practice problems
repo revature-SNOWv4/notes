@@ -1,15 +1,15 @@
-fizzbuzz in typescript: 
+1. fizzbuzz in typescript: 
 iterate from 1-100
 if a number is a multiple of 3, print fizz
 if a multiple of 5, print buzz
 if a multiple of both 3 and 5, print fizzbuzz
 
-console.log fibonnaci sequence first 100 numbers
+2. console.log fibonnaci sequence first 100 numbers
 
-make a function that determines if a parameter is prime
+3. make a function that determines if a parameter is prime
 
-demonstrate object-oriented programming : inheritance, method overriding, and actually create and test the objects
-(objects must be understandable from p[lain english, like animal>cat but not cat/food/hero examples)
+4. demonstrate object-oriented programming : inheritance, method overriding, and actually create and test the objects
+(objects must be understandable from plain english, like animal>cat but not cat/food/hero examples)
 
 all in typescript with tsc compiler and running with node.js / npm start!!!
 
