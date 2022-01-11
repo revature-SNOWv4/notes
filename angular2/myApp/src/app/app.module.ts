@@ -16,7 +16,8 @@ import { FormsModule } from '@angular/forms';
     ThreeComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
