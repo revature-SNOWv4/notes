@@ -8,6 +8,7 @@ import { ThreeComponent } from './three/three.component';
 
 import { FormsModule } from '@angular/forms';
 import { LifecycleComponent } from './lifecycle/lifecycle.component';
+import { ChildCComponent } from './lifecycle/child-c/child-c.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { LifecycleComponent } from './lifecycle/lifecycle.component';
     OneComponent,
     TwoComponent,
     ThreeComponent,
-    LifecycleComponent
+    LifecycleComponent,
+    ChildCComponent
   ],
   imports: [
     BrowserModule,

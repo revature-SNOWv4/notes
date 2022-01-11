@@ -1,7 +1,22 @@
+<p>The main structure of angular:
+    components, modules, and services
+    components: are an isolated piece of the website containing ts, html, css
+    services: ts that does some task and is accessible throughout the angular project
+    modules: logical groupings of components, services, pipes, directives, routes that manages dependencies
+        dependencies? things that our programs rely on to Run
+        so it's like how a js file might be dependent on ajax to get api information
+        angular provides dependency injection and wiring through decorators
+            dependency injection: angular is managing our dependencies in a way outside of our control
+                injects them in post-processing (ng serve)
+            wiring is linking our components and services together
+</p>
 <h2>Structural directives</h2>
 <h3 *ngIf="isVisible">Am I visible?</h3>
 <button (click)="toggle()">toggle!</button>
 <div *ngIf = "isVisible"><app-two></app-two></div>
+<div *ngFor="let element of myArr">
+    <div>Number: {{element}}</div>
+</div>
 <h2>Binding</h2>
 <!-- one way binding (changes in ts reflected in html or vice versa) -->
 <!-- property binding (ts to html) -->
@@ -11,3 +26,6 @@
 <!-- combined: binding event for data input combined with property binding -->
 <input [(ngModel)]="inputData">
 <div>{{inputData}}</div>
+<h2>Attribute Directives</h2>
+<div [ngClass]='currentClasses'>Am I special?</div>
+<div [ngStyle]='currentStyles'>How special?</div>

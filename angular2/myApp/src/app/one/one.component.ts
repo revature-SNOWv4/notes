@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { bufferToggle } from 'rxjs';
 
 @Component({
   selector: 'app-one',
@@ -8,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class OneComponent implements OnInit {
 
   isVisible = false;
-
+  myArr: Array<Number> = [0,1,2,3,4];
   toggle(){
     this.isVisible = !this.isVisible;
   }
@@ -22,4 +23,15 @@ export class OneComponent implements OnInit {
   }
   propertyBindingVariable = "Julia Huth";
   inputData : string ="";
+  currentClasses : Object = {
+    'special': false,
+    'very-special': true,
+    'super-special' : false
+  }
+  currentStyles: object = {
+    'background-color':'pink',
+    'color':'blue',
+    'padding':'20px'
+
+  }
 }

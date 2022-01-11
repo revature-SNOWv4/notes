@@ -1,0 +1,11 @@
+.special{
+    padding: 20px;
+    border-radius: 8px;
+}
+.very-special{
+    background-color: pink;
+
+}
+.super-special{
+    color:blue;
+}
