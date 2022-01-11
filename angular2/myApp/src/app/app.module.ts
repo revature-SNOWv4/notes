@@ -7,13 +7,15 @@ import { TwoComponent } from './two/two.component';
 import { ThreeComponent } from './three/three.component';
 
 import { FormsModule } from '@angular/forms';
+import { LifecycleComponent } from './lifecycle/lifecycle.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     OneComponent,
     TwoComponent,
-    ThreeComponent
+    ThreeComponent,
+    LifecycleComponent
   ],
   imports: [
     BrowserModule,

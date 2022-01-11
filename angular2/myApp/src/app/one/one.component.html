@@ -2,7 +2,12 @@
 <h3 *ngIf="isVisible">Am I visible?</h3>
 <button (click)="toggle()">toggle!</button>
 <div *ngIf = "isVisible"><app-two></app-two></div>
-
+<h2>Binding</h2>
+<!-- one way binding (changes in ts reflected in html or vice versa) -->
+<!-- property binding (ts to html) -->
 <div [innerHTML]="propertyBindingVariable"></div>
+<!-- event binding (html to ts) -->
+<button (click) = "createAlert()">alert!</button>
+<!-- combined: binding event for data input combined with property binding -->
 <input [(ngModel)]="inputData">
 <div>{{inputData}}</div>

@@ -12,6 +12,9 @@ export class OneComponent implements OnInit {
   toggle(){
     this.isVisible = !this.isVisible;
   }
+  createAlert(){
+    alert("alert");
+  }
 
   constructor() { }
 
