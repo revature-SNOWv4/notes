@@ -29,3 +29,15 @@
 <h2>Attribute Directives</h2>
 <div [ngClass]='currentClasses'>Am I special?</div>
 <div [ngStyle]='currentStyles'>How special?</div>
+<h2>Pipes</h2>
+<div>{{"this is a test" | uppercase}}</div>
+<div>{{"this is a test" | uppercase | lowercase}}</div>
+<div>{{1234.12 | currency: 'USD'}}</div>
+<div>{{1234.12 | currency: 'GBP'}}</div>
+<div>{{"2022-01-11" | date: 'm-d-y'}}</div>
+<div>{{1.23445678854434324 | number: '4.1-6'}}</div>
+<div>{{"billy bob" | piglatin}}</div>
+<h2>services example</h2>
+<div [innerHTML]="fName"></div>
+<div [innerHTML]="lName"></div>
+<div [innerHTML]="fullName"></div>

@@ -9,6 +9,7 @@ import { ThreeComponent } from './three/three.component';
 import { FormsModule } from '@angular/forms';
 import { LifecycleComponent } from './lifecycle/lifecycle.component';
 import { ChildCComponent } from './lifecycle/child-c/child-c.component';
+import { PiglatinPipe } from './piglatin.pipe';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ChildCComponent } from './lifecycle/child-c/child-c.component';
     TwoComponent,
     ThreeComponent,
     LifecycleComponent,
-    ChildCComponent
+    ChildCComponent,
+    PiglatinPipe
   ],
   imports: [
     BrowserModule,

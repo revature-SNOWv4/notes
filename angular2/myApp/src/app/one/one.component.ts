@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { bufferToggle } from 'rxjs';
+import { ServiceabcService } from '../serviceabc.service';
 
 @Component({
   selector: 'app-one',
@@ -17,7 +18,7 @@ export class OneComponent implements OnInit {
     alert("alert");
   }
 
-  constructor() { }
+  constructor(private serviceAbc : ServiceabcService) { }
 
   ngOnInit(): void {
   }
@@ -34,4 +35,7 @@ export class OneComponent implements OnInit {
     'padding':'20px'
 
   }
+  fName:String = this.serviceAbc.firstName;
+  lName:String = this.serviceAbc.lastName;
+  fullName:String = this.serviceAbc.getFullName();
 }
