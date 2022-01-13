@@ -21,8 +21,10 @@ export class AppComponent implements OnInit{
       subject.subscribe({
          next: (data) => console.log('First observer prints '+ data)
       });
+      // publishing
       subject.next(1);
       //Second Observer
+      // subscribing
       subject.subscribe({
          next: (data) => console.log('Second observer prints '+ data)
       });

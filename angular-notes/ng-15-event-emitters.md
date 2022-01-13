@@ -123,8 +123,13 @@ import { Component } from '@angular/core';
   template: `
     <h2>Event Emitters</h2>
     <p> At AppComponent, count = {{ count }} </p>
+
     // ted: we have here a connection to the other component through event (change)
     // kind of like (onclick)
+    // except: change is actually an event emitter made by the parent component
+    // so: the parent component can intiate a function call in this component while also sending it info using the $event object
+    // (in this example the parent component sends in a number)
+    
     <app-child [count]='count' (change)= 'countChange($event)'></app-child>
   `
 })
