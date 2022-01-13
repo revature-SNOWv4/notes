@@ -1,3 +1,10 @@
+<!-- event emitters:
+sometimes we need some function to be called when something happens
+and to that function we need to pass some information to tell our programs what to do
+so this follows the format of ee: EventEmitter<type> = new EventEmitter<type> 
+when we need something updated:
+ee.emit(thing:type)-->
+
 # Event Emitters in Angular
 
 An [EventEmitter](https://angular.io/api/core/EventEmitter) is used to emit custom events synchronously or asynchronously, and register handlers for those events by subscribing to an instance.
@@ -116,6 +123,8 @@ import { Component } from '@angular/core';
   template: `
     <h2>Event Emitters</h2>
     <p> At AppComponent, count = {{ count }} </p>
+    // ted: we have here a connection to the other component through event (change)
+    // kind of like (onclick)
     <app-child [count]='count' (change)= 'countChange($event)'></app-child>
   `
 })

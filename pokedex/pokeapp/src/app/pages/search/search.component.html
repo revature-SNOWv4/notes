@@ -1,2 +1,5 @@
 <h1>poke search page</h1>
-<app-pokelist></app-pokelist>
+<input class ="poke-input" type="text" [(ngModel)]="inputString">
+<!-- two way binding is just a combination of event binding and property binding (so it goes both ways from html/ts) -->
+<!-- <button (textUpdated)="updateText()"></button> -->
+<app-pokelist [pokeName]="inputString"></app-pokelist>

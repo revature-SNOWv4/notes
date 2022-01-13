@@ -9,6 +9,7 @@ import { NavComponent } from './components/nav/nav.component';
 import { DetailsComponent } from './pages/details/details.component';
 import { PokecardComponent } from './components/pokecard/pokecard.component' ;
 import { PokelistComponent } from './components/pokelist/pokelist.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -19,11 +20,13 @@ import { PokelistComponent } from './components/pokelist/pokelist.component';
     DetailsComponent,
     PokecardComponent,
     PokelistComponent
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

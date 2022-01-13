@@ -1,1 +1,6 @@
-<p>details works!</p>
+<div class = "pokeCard">
+    <h3>{{myPoke}}</h3>
+    <img [src]="myImg">
+    <div *ngFor="let item of myPokeObject.abilities">{{item.ability.name}}</div>
+    
+</div>

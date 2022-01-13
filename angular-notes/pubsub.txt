@@ -1,0 +1,78 @@
+"subscribing"
+publisher/subscriber models
+
+observer: observe changes
+observable: creates changes
+
+what is subscribing?
+subscribing is adding a handler for observed behavior
+
+sound, and 3 observing animals
+cat,dog,mouse
+
+list of handler for an event
+
+making sound pubsub:
+
+for william: in ts/js/java an interface is just a guarantee of a certain format of information/functions/w/e
+every animal is interested in recieve noises, but they must behavior predefined for what they do with the noise
+bc we dont know when the info is coming and we don't want to just sit around waiting for it
+(maybe the next info only gets published a week from now)
+it's kind of like a refutation of running things line by line - because when we are waiting for an event to happen
+that is impractical
+so instead we tell it what it should do when information is recieved (a week from now)
+and those instructions are a handler:
+so eg handler sets a local variable equal to the recieved information
+
+handlers[
+    cat.hear(param:noise);
+    dog.hear(param:noise);
+    mouse.hear(param:noise);
+    once subscribed: horse.hear(param:noise);
+]
+
+publish a sound: crash:
+iterate through all handler functions stored in our handler array
+
+cat.hear(crash);
+dog.hear(crash);
+mouse.hear(crash);
+
+an animal subscribes: horse (pushes horse handler to handler array)
+
+publish another sound: "bang"
+all animals hear "bang"
+every subscriber might handle the noise event identically or differently or w/e
+
+dog.publishNoise("bark");
+
+what it's good for:
+if we publish information, it's likely that we want many different actors to have access to it
+but the actor publishing information doesnt know from the start which handler to send the information to
+that's why we use this model
+
+implementing observer, observable:
+so that way we call 'publish' or 'subscribe' on ANY object that implements these
+and thereafter any object which needs to correctly interpret publishing or subscribing
+knows to expect this behavior
+and expects these function to exist in a way that is understandable
+
+away from animals and towards something we understand:
+httpclient
+so when we subscribe to an httpclient,
+we are adding a handler (via an arrow function) for interpretting the data that httpclient sends us
+so we we can subscribe to httpclient, can we publish to it?
+no... httpclient is giving us the info beyond our knowledge
+which is to say that httpclient is an observable
+httpclient intiates a new http request every time we subscribe
+
+to answer thomas' question: (different from rest:
+get: we recieve some info to which we must subscribe
+getting from the database
+post: we are sending info to be added to whatever thing we are communicating with
+sending to the database
+update, put, delete, w/e theres like 30 of them)
+
+rxjs is a whole library for javascript for interpretting things in what we call "reactive" programming
+rxjs introduces, for example, subjects:
+subjects are both observers and observables

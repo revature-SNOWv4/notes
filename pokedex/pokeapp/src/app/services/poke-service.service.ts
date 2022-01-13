@@ -5,9 +5,16 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class PokeServiceService {
-  currentPokemon:string = "pikachu";
+
+  
+
   constructor(private httpCli: HttpClient) { }
+
   getAllPokemon(){
     return this.httpCli.get<any>(`https://pokeapi.co/api/v2/pokemon?limit=1181`);
   }
+  getSinglePokemon(url:string){
+    return this.httpCli.get<any>(url);
+  }
+
 }
