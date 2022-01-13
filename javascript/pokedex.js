@@ -14,17 +14,11 @@ function getData (){
     // GET, PUT, POST, DELETE, etc
 
     var xhttp = new XMLHttpRequest();
-
     //step 2: set a callback function for the readystatechangeevent
-
     xhttp.onreadystatechange = receiveData;
-
     // step 3: open the request
-
     xhttp.open('GET', apiURL + '' + userInput);
-
     // step 4: send the request
-
     xhttp.send();
 
     function receiveData(){
@@ -46,6 +40,7 @@ function getData (){
         }
     }
 }
+
 function populateData(response){
     var dataSection = document.getElementById('data');
     var nameTag = document.createElement('h3');
@@ -75,5 +70,4 @@ function populateData(response){
             dataSection.appendChild(spriteImg);
         }
     }
-
 }

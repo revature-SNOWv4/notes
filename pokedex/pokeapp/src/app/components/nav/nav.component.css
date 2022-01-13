@@ -1,0 +1,9 @@
+#nav {
+    background-color: aqua;
+    padding-top:20px;
+    padding-bottom:20px;
+}
+.navbar-brand{
+    margin-right: 20px;
+    margin-left: 20px;
+}

@@ -9,18 +9,20 @@ Projects
 
 Clients:
 Staging:
-1 month
+0-3 months
 
-you will relocate!!!!
+You will relocate!!!!
 
-sign on day documents : thursday noon
+Sign on day documents : thursday noon
 
-releases:
-mutual releases
-warning
-mutual release : you are released from revature
+Releases:
+warning: You get one warning for soft skills/lack of effort/unprofessionalism
+mutual release : You are released from revature with no obligation to revature
 
+needed software:
 git
 vscode
 node.js
 postgresql (pgadmin 4)
+postman
+dbeaver
