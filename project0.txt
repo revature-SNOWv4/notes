@@ -25,9 +25,23 @@ because i already did it
 Once you complete these basic requirements (due Tues), you should work on:
 
 - You must use the advanced array methods at least once at some point (map, filter, sort)
+    -I already did the example with filtering based on user input box and name of items in array on thursday
+    -the reason im interested in these is because to use these three functions, you have to write
+        a callback function yourself
+        which is an interesting puzzle
+
+    -A couple of examples we can look at:
+    -Sort based on attribute (like strength)
+    -Might be possible to shuffle randomly using sort?
+    -Alphabetical sort
+    -Filter based off of cart game legality
+    -Filter based off of if a character exists in a tv episode
+    -Map (modify power level of digimon or something)
 
 - Some angular testing
-(doesnt need to be comprehensive - just a proof-of-concept is good enough)
+    -i would like you all to research this yourself
+    -seems pretty simple to me and theres a good guide in the notes
+    (doesnt need to be comprehensive - just a proof-of-concept is good enough)
 
 - Must use stylesheets
 

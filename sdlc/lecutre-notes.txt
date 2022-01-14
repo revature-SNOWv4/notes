@@ -1,8 +1,6 @@
 SDLC:
 software development lifecycle
 
-
-
 1. Requirements gathering
 requirements: we find the systems goals, expectations, constraints
 2. Design
@@ -67,6 +65,7 @@ Agile:
     User stories / Story pointing
         We should write what users should be able to do in an easy to understand way
         They follow this format:
+            As a _____, I want to ______ to ______.
             As a user, I want to search pokemon to find a specific pokemon
                 EG: if this user story is selected
                     the story is taken as our requirements
@@ -82,14 +81,7 @@ Agile:
             As an admin, I want to add pokemon so that users can interact with the new generations
 
             trello: items can be divided between planned, in progress, completed, etc
-                ambiguity:
-                    this was a project to create a tech support live chat feature
-                    drama over whether the requirement a 'tech support should be able to review tech support tickets'
-                    does this imply that we need to implement more than one tech support chat box simultaneously?
-
-                    communication:
-                        it sounds cliche but if you dont communicate well nothing good is gonna happen
-    
+                
     Scrum:
         Every sprint goes through the same loop of SDLC:
         switching between requirements, design, implementation, testing, deployement
@@ -108,7 +100,7 @@ Agile:
     Kanban
 
         Trello deluxe
-        
+
         A chart is managed where developers shift currently developed cards from
             backlog -> design -> development -> testing -> release
         no strict formula as to what this chart looks like
