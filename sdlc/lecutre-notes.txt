@@ -1,0 +1,123 @@
+SDLC:
+software development lifecycle
+
+
+
+1. Requirements gathering
+requirements: we find the systems goals, expectations, constraints
+2. Design
+overall architecture:
+    we plan our architecture
+    the frameworks/libraries/languages we use
+    for instance: the REST interaction between frontend/backend
+    our components
+    etc
+3.  Implementation & unit testing:
+    We implement code while we test isolated functionality to make sure it works
+    a. Implementation
+    b. Testing
+        i. unit testing
+            unit testing is about testing the isolated functionality of a single 'thing'
+                a single class, a single component
+4.  Integration & system testing
+    to verify that code functions correctly after other funtionalities have been integrated
+    to verify that the code functions as a whole
+5.  Deployment, operation, maintenance
+    We ship out the system and we watch over it for a long period so see that everything works as intended
+
+Waterfall model:
+    We complete each step of the process before moving on to the next one
+    The 'first' SDLC model
+    Because we would be making a single release of a system on a cd or something like that
+    The whole process can take months
+    Meaning: things can change
+        What if we get bad feedback from the client after the project is complete?
+        What if they change their mind or their budget?
+        What if we decide to change our design (like if we find a new framework we'd like to use?)
+    Meaning: it's very rigid
+        We have little recourse if things need to change and changing things we like lead us behind schedule
+            and over budget
+
+Agile:
+    We complete a small subset of the project, from requirements to deployment, in a single 'sprint'
+    A sprint is a time period of usually 2 weeks
+    Rather than completing the whole thing at once, the developers select what functionality has the highest
+        priority from a list of backlogged requirements
+    Good:
+        Constant interaction with stakeholders
+        Generally happier stakeholders
+    Bad:
+        Creates some amount of overhead
+    This is why we need automated testing
+        It may seem at first that writing automated testing is a ton of effort for what unskilled humans can do
+            in a short amount of time
+    This is why we need continuous delivery/continuous integration
+        Continuous delivery: Every time a new version of our system comes out, the product is delivered to 
+            a devOps team before they sent it to production
+        Continuous integration: The process of sending our system to production is entirely automated
+        devOps team: is managing this process (the overhead of SDLC)
+        the website etsy:
+            how many times do you all think etsy deploys an updated system per day?
+            50
+            the reason this is possible is because of automated continuous integration
+                So: the code is pulled from some development repository when someone pushes it there
+                A continuous integration tool goes through the code and conducts all forms of automated testing
+                The CI tool pushes that code to the production environment
+
+    User stories / Story pointing
+        We should write what users should be able to do in an easy to understand way
+        They follow this format:
+            As a user, I want to search pokemon to find a specific pokemon
+                EG: if this user story is selected
+                    the story is taken as our requirements
+                    design: we need a pokeList component, a search page, a search bar, and we will need to draw
+                        from the list of all pokemon from the api
+                    implementation
+                        i. implement
+                        ii. unit testing:
+                            does the search box update the pokeName variable to what is expected?
+                            does searching for 'pikachu' return pikachu as a search result?
+                                unit testing looks for specific outcomes from a predictable and repeatable setup process
+            As a user, I want to catch pokemon so I can add them to my collection
+            As an admin, I want to add pokemon so that users can interact with the new generations
+
+            trello: items can be divided between planned, in progress, completed, etc
+                ambiguity:
+                    this was a project to create a tech support live chat feature
+                    drama over whether the requirement a 'tech support should be able to review tech support tickets'
+                    does this imply that we need to implement more than one tech support chat box simultaneously?
+
+                    communication:
+                        it sounds cliche but if you dont communicate well nothing good is gonna happen
+    
+    Scrum:
+        Every sprint goes through the same loop of SDLC:
+        switching between requirements, design, implementation, testing, deployement
+        Ceremonies:
+        Sprint planning
+        Scrum meetings: where this planning happens and the currently developed features are drawn from the backlog
+            (daily standup):
+                the developers announce their progress on what they've worked on,
+                what they plan to work on,
+                what is currently blocking them from working
+        Sprint reviews
+
+    EXtreme Programming
+        almost the same thing as scrum
+    
+    Kanban
+
+        Trello deluxe
+        
+        A chart is managed where developers shift currently developed cards from
+            backlog -> design -> development -> testing -> release
+        no strict formula as to what this chart looks like
+        advantages
+        as developers complete a card, they can select from backlogged cards to begin working on next - flexible schedule
+        we refer to it as event driven - removing the pressures and deadlines of the scrum framework
+        greater allowance for specialization (eg testing specialists can focus on the testing portion of the kanban chart)
+        can take on new client requirements easily
+
+        disadvantages
+        The chart can get very big and very disorganized quickly
+        Lack of a strict timing element

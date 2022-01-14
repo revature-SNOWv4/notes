@@ -1,9 +1,39 @@
 Project 0:
+due thurs. 1/20
+presentations beginning at 10am est
+On Tuesday: I will have another round of both 1 on 1's (afternoon) with a time limit on each 
+    as well as selecting a few more p0s to see and a short review
+QC: Wednesday 3:30pm est (week 2 - everything from typescript - angular - SDLC)
+
+Basic Reqs due tuesday:
+
 - Must be an angular project
-- Must connect either to a web api or a dummy api in postman
-- The api accesses must depend in some ways on interaction from the user (eg the user inputs what they want to see)
-- You must use the advanced array methods at least once at some point (map, filter, sort)
+
+- Must connect to a web api
+
+- What the user sees from the api should depend on user input
+
 - The website must have implement more than one route (routing)
-- Must be creative and you can't use pokemons api
-- I would like to see different types of api calls
+
 - I would like api calls to be made by a service
+
+- You can't use the pokemon api and I would like to see your website differentiate itself from mine
+(ie I want to see something different than a list that the user searches/filters)
+you can still include that feature but I wouldn't consider as satisfying the advanced array methods req
+because i already did it
+
+Once you complete these basic requirements (due Tues), you should work on:
+
+- You must use the advanced array methods at least once at some point (map, filter, sort)
+
+- Some angular testing
+(doesnt need to be comprehensive - just a proof-of-concept is good enough)
+
+- Must use stylesheets
+
+Basic reqs: due tuesday
+Advanced reqs: due thursday at presentation
+the reason being tha in a real production environment you have both sprints and code freezes
+code freeze: you can no longer work on implementation after a certain day
+
+I am vaguely aware of what to expect from all of you
