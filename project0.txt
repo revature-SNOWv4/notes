@@ -35,5 +35,3 @@ Basic reqs: due tuesday
 Advanced reqs: due thursday at presentation
 the reason being tha in a real production environment you have both sprints and code freezes
 code freeze: you can no longer work on implementation after a certain day
-
-I am vaguely aware of what to expect from all of you
