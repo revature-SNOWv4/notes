@@ -1,6 +1,9 @@
 <div class = "pokeCard">
     <h3>{{myPoke}}</h3>
-    <img [src]="myImg">
+    <img [src]="currentImg" (onclick)="iterateImg()">
+    <!-- iterateImg changes currentImg to the next item of the list -->
+
     <div *ngFor="let item of myPokeObject.abilities">{{item.ability.name}}</div>
-    
+    <app-poke-capture (change)="captureInfo($event)"></app-poke-capture>
+    <div *ngFor="let entry of captureMessages">{{entry}}</div>
 </div>

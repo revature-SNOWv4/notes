@@ -10,6 +10,7 @@ import { DetailsComponent } from './pages/details/details.component';
 import { PokecardComponent } from './components/pokecard/pokecard.component' ;
 import { PokelistComponent } from './components/pokelist/pokelist.component';
 import { FormsModule } from '@angular/forms';
+import { PokeCaptureComponent } from './components/poke-capture/poke-capture.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { FormsModule } from '@angular/forms';
     NavComponent,
     DetailsComponent,
     PokecardComponent,
-    PokelistComponent
+    PokelistComponent,
+    PokeCaptureComponent
     
   ],
   imports: [

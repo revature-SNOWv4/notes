@@ -50,9 +50,10 @@ Agile:
         It may seem at first that writing automated testing is a ton of effort for what unskilled humans can do
             in a short amount of time
     This is why we need continuous delivery/continuous integration
+        Continuous integration: Code is continuously being integrated into a single shared repository (github)
         Continuous delivery: Every time a new version of our system comes out, the product is delivered to 
             a devOps team before they sent it to production
-        Continuous integration: The process of sending our system to production is entirely automated
+        Continuous deployement: The process of sending our system to production is entirely automated
         devOps team: is managing this process (the overhead of SDLC)
         the website etsy:
             how many times do you all think etsy deploys an updated system per day?

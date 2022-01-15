@@ -15,11 +15,13 @@ export class DetailsComponent implements OnInit {
   myUrl:string="";
   myPokeObject:any="";
   myImg: string = "";
+  captureMessages: Array<String> =[];
   // ngOnInit is a lifecycle hook:
   // meaning that at certain points of the lifetime of a component, an appropriate hook is called
   // (onInit, onUpdate, onDestroy)
   // provided that we import and implement OnInit etc
   ngOnInit(): void {
+    
     this.myPoke = this.currentPokeServ.getName();
     this.myUrl = this.currentPokeServ.getUrl();
     this.pokeService.getSinglePokemon(this.myUrl).subscribe(poke => 
@@ -27,6 +29,11 @@ export class DetailsComponent implements OnInit {
     this.myImg=poke.sprites.front_default
   });
     console.log(this.myPokeObject);
+  }
+  captureInfo(event: any){
+    this.captureMessages.push(event);
+    // console.log(event);
+
   }
 
 }

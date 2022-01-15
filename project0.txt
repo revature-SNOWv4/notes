@@ -3,7 +3,7 @@ due thurs. 1/20
 presentations beginning at 10am est
 On Tuesday: I will have another round of both 1 on 1's (afternoon) with a time limit on each 
     as well as selecting a few more p0s to see and a short review
-QC: Wednesday 3:30pm est (week 2 - everything from typescript - angular - SDLC)
+QC: Wednesday 3:30pm est (week 2 - everything from node - typescript - angular - SDLC)
 
 Basic Reqs due tuesday:
 
@@ -37,6 +37,8 @@ Once you complete these basic requirements (due Tues), you should work on:
     -Filter based off of cart game legality
     -Filter based off of if a character exists in a tv episode
     -Map (modify power level of digimon or something)
+
+    -msg me if you want help with the logic here
 
 - Some angular testing
     -i would like you all to research this yourself
